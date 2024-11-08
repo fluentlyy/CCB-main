@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'NourdRegular';
+    src: url('path-to-your-font/Nourd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'NourdRegular', sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  img {
+    border-radius: 30px;
+  }
+
+.our_history p{
+    font-size: 12vh;
+    margin: 0;
+}
+
+
+
+
+
+.headline_part p{
+    font-size: 7vh;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.violet{
+    color: #4B61F1;
+    font-style: bold;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.small_photo {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.small_photo img {
+    width: 30%; /* Set width relative to container */
+    aspect-ratio: 1/1; /* Maintain a 1:1 square aspect ratio */
+    object-fit: cover; /* Ensures images fill the square shape without distortion */
+    border-radius: 8px; /* Optional: adds rounded corners */
+
+}
+
+.text_first {
+    padding: 10px;
+    width: 40%;
+
+}
+
+.two_text_first{
+    display: flex;
+    flex-direction: row;
+}
+.second {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 0;
+}
+
+.second img {
+    width: 40%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.third{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.continue{
+    font-size: 3vh;
+    width: 40%;
+    margin: 0;
+}
+
+.two_text_third{
+    display: flex;
+    flex-direction: row;
+}
+
+.text_third{
+    width: 40%;
+
+
+}
+
+.text_third p{
+    
+}

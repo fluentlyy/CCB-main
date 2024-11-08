@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'NourdRegular';
+    src: url('path-to-your-font/Nourd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+body {
+    font-family: 'NourdRegular', sans-serif;
+}
+
+
+.recovery{
+    width: 70%;
+    display: flex;
+    margin-left: 10%;
+    justify-content: center; 
+    flex-direction: column;  
+}
+
+.recovery_text{
+    display: flex;
+    flex-direction: row;
+}
+
+.big_text {
+    font-size: 7vh;
+    margin-bottom: -20px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+  
+.small_text_1 {
+    max-width: 670px;
+    font-size: 2vh;
+    margin-left: 10%;
+    line-height: 1.4;
+}
+.small_text_2 {
+    max-width: 670px;
+    font-size: 1.5vh;
+    margin-left: 10%;
+    line-height: 1.4;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Column layout for smaller images */
+.columng_photo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    align-items: center;
+}
+
+/* Square photos */
+.small-photo  {
+    width: 68%;
+    aspect-ratio: 1 / 1; /* Ensures square shape */
+    object-fit: cover;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.big_photo {
+    width: 40%;
+    aspect-ratio: 1 / 1; /* Keeps the div square */
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    position: relative; /* Allows positioning the img absolutely within */
+    overflow: hidden; /* Ensures image stays within rounded corners */
+}
+
+.big_photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    border-radius: 20px; /* Matches the div's rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .photos{
+        display: flex;
+        flex-direction: column;
+    }
+    .columng_photo, .big_photo {
+        flex: 1; /* Make all columns equal width on smaller screens */
+        width: 100%; /* Ensure no overflow */
+    }
+}

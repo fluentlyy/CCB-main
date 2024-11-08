@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'NourdRegular';
+  src: url('path-to-your-font/Nourd-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'NourdRegular', sans-serif;
+}
+
+.big_text {
+  font-size: 7vh;
+  margin-bottom: -20px;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+.small_text {
+  max-width: 670px;
+  font-size: 2vh;
+  margin-left: 10%;
+  line-height: 1.4;
+}
+
+.container_of_coniners{
+  display: flex;
+    
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+}
+
+
+.inforamtion_desciption p{
+  margin-left: 2%;
+  width: 80%;
+  
+}
+
+.inforamtion_desciption{
+  display: flex;
+  flex-direction: row;
+  align-items: center;   
+}
+
+.inforamtion_desciption svg{
+  width: 20px;
+  height: 20px;
+  margin-left: 210%;
+  scale: 1.2;
+}
+
+.reviews_container{
+  width: 45%;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-left: 20px;
+  flex-wrap: wrap; 
+}
+.review_information{
+  margin-right: 2%;
+}
+.foto_name{
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;  
+}
+
+.foto_name img{
+  width:  10vh;
+  height: 10vh;
+  margin-left: 2%;
+  object-fit: cover;
+}
+
+.foto_name p{
+  margin-left: 20px;
+  font-size: 4vh;
+  font-style: bold;
+}
+
+
+@media  (max-width: 995px)  {
+  
+  .reviews{
+    display: flex;
+    flex-direction: column;
+  }
+  .inforamtion_desciption{
+    display: flex;
+    flex-direction: column;
+  }
+  .inforamtion_desciption svg{
+    margin-left:0;
+    margin-bottom: 20px;
+  }
+
+  .foto_name p {
+    font-size: 1.8vh;
+}
+} 
+

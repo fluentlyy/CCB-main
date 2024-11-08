@@ -1,0 +1,221 @@
+
+@font-face {
+    font-family: 'NourdRegular';
+    src: url('path-to-your-font/Nourd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'NourdRegular', sans-serif;
+  }
+
+
+
+.big_text {
+    font-size: 60px;
+    margin-bottom: -20px;
+    margin-left: 2%;
+    font-weight: bold;
+  }
+  
+  .small_text {
+    width: 60%;
+    margin-left: 2%;
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+
+
+
+
+.form_contact_us form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background: rgba(255, 238, 88, 1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.name_and_email{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.form_contact_us h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 15px;
+}
+.form_contact_us form h1 {
+    font-size: 36px;
+}
+/* Стиль для поля имени и фамилии */
+.form_contact_us input[id="name"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 238, 88, 1);
+    border-bottom: 1px solid rgb(106, 106, 106);
+    background-color: rgba(255, 238, 88, 1);
+    color: black;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Стиль для поля email */
+.form_contact_us input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 238, 88, 1);
+    border-bottom: 1px solid rgb(106, 106, 106);
+    background-color: rgba(255, 238, 88, 1);
+    color: black;
+    border-radius: 4px;
+    font-size: 16px;
+
+    transition: border-color 0.3s;
+    margin-left: 10px;
+}
+
+/* Стиль для поля сообщения */
+.form_contact_us input[id="Yourmessage"] {
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 238, 88, 1);
+    border-bottom: 1px solid rgb(106, 106, 106);
+    background-color: rgba(255, 238, 88, 1);
+    color: black;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+
+}
+
+/* Эффект при фокусе для всех полей */
+.form_contact_us input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form_contact_us input[type="text"]:focus,
+.form_contact_us input[type="email"]:focus,
+.form_contact_us input[type="Yourmessage"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form_contact_us input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color:  rgba(255, 238, 88, 1);
+    border: 1px solid black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form_contact_us input[type="submit"]:hover {
+    background-color: rgb(234, 166, 21);
+}
+
+.terms_and_conditions{
+    display: flex;
+    justify-content: space-around;
+}
+
+.terms_agreement {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.terms_agreement input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.form_contact_us input[type="submit"] {
+    width: 25%;
+    padding: 10px;
+    background-color:  rgba(255, 238, 88, 1);
+    border: 1px solid black;
+    color: #989898;
+    border-radius: 4px;
+    cursor: not-allowed; /* Отключено по умолчанию */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form_contact_us input[type="submit"]:enabled {
+    cursor: pointer;
+    background-color: rgb(255, 188, 44);
+    color: #333;
+    
+}
+
+.form_contact_us input[type="submit"]:hover:enabled {
+    background-color: rgb(234, 166, 21);
+}
+
+
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Стили для круглого черного чекбокса */
+.terms input[type="checkbox"] {
+    -webkit-appearance: none; /* Отключает стандартный стиль чекбокса */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%; /* Делаем чекбокс кругом */
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.terms input[type="checkbox"]:checked {
+    background-color: #000; /* Черный цвет для отмеченного состояния */
+    border-color: #000;
+}
+
+.terms input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background-color: white; /* Внутренний белый кружок */
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .small_text {
+        width: 90%;
+        margin-left: 2%;
+        font-size: 26px;
+        line-height: 1.4;
+      }
+  }
+

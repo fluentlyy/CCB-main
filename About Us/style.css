@@ -1,0 +1,155 @@
+
+@font-face {
+    font-family: 'NourdRegular';
+    src: url('path-to-your-font/Nourd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'NourdRegular', sans-serif;
+  }
+
+/* Layout for the About Us section */
+.about_us {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+    margin-left: auto;
+    padding-left: 10%;
+    padding-bottom: 80px;
+}
+
+
+.ABOUT_US{
+    font-size: 10vh;
+}
+.description_about_us {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.description_about_us p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.text_about_us p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 0px; 
+    max-width: 670px;
+    margin-top: -85px;
+}
+
+.bird_about_us
+{
+    width: 200px;
+    margin-left: 20%;
+    height: auto;
+    position: relative;
+    left: 8%;
+    top: 40px;
+    scale: 2;
+}
+
+ .about_us_location {
+    object-fit: cover;
+    width: 670px;
+    height: auto;
+    margin-left: 10%;
+    border-radius: 30px;
+}
+
+/* Blue citation styling */
+.big_blue_citation {
+    width: 80%;
+    padding: 2%;
+    margin: 40px auto;
+    font-size: 8vh;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(75, 97, 241, 1);
+    border-radius: 20px;
+}
+
+/* Headline section */
+.headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.headlibe_name p{
+    font-size: 12vh;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+.birds {
+    display: flex;
+    gap: 10px;
+}
+
+.birds_guitar, .birds_dance {
+    margin-top: 20px;
+    margin-left: 7vh;
+    scale: 1.2;
+    width: 200px;
+    height: 200px;
+}
+
+.text_headline {
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Photo layout */
+.photos_about_us {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.description_text_headline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    color: #7f7e7e;
+}
+.photo_container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo_us_short {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    background-color: #ccc;
+    border-radius: 5px;
+
+}
+
+.photo_us {
+    width: 800px;
+    height: 400px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
