@@ -91,7 +91,6 @@ body {
   background: rgba(255, 254, 247, 1);
 }
 .body__container {
-  width: 100%;
   max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
@@ -828,7 +827,12 @@ body {
   fill: #fffef7;
 }
 .instagram:hover {
-  background: rgba(75, 97, 241, 1);
+  background: linear-gradient(
+    to bottom,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
   transform: scale(0.97);
 }
 .telegram {
@@ -845,7 +849,7 @@ body {
   top: 25px;
 }
 .telegram:hover {
-  background: rgba(75, 97, 241, 1);
+  background: rgba(35, 154, 214, 1);
   transform: scale(0.95) rotate(15deg);
 }
 .telegram:hover svg {
@@ -872,7 +876,8 @@ body {
   height: 37.5px;
 }
 .linkedin:hover {
-  background: rgba(75, 97, 241, 1);
+  background: rgba(12, 100, 197, 1);
+
   transform: scale(0.95);
 }
 .linkedin:hover svg {

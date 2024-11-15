@@ -1,29 +1,67 @@
-document.getElementById("agree").addEventListener("change", function() {
-    const submitButton = document.querySelector("input[type='submit']");
-    submitButton.disabled = !this.checked;
-});
-
-
-
-
-function emailSend(){
-
-
-	var userName = document.getElementById('name').value;
-	var phone = document.getElementById('phone').value;
-	var email = document.getElementById('email').value;
-
-
-	var messageBody = "Name " + userName +
-	"<br/> Phone " + phone +
-	"<br/> Email " + email;
-	Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "hacerpc330@gmail.com",
-    Password : "653639AD2ACA6A77F2A4502AFAEC5B002DDB",
-    To : 'hopab28824@regishub.com',
-    From : "hacerpc330@gmail.com",
-    Subject : "This is the subject",
-    Body : messageBody
+function handleMediaChange() {
+  if (window.innerWidth <= 375) {
+    document.querySelector(
+      ".contact__us-form"
+    ).innerHTML = `<h2 class="form__title">Hello, nice to meet you)</h2>
+<div class="form__inputs-top">
+  <input class="name__input" placeholder="Name\Surname" type="text" />
+  <input class="email__input" placeholder="Email" type="text" />
+  <input class="mid__input" placeholder="Your message" type="text" />
+  <p></p>
+</div>
+<div class="form__bot">
+  <div class="form__confirm">
+    <label class="custom-checkbox">
+      <input type="checkbox" />
+      <span></span>
+    </label>
+    <p>i accept the terms&conditions</p>
+  </div>
+  <button class="form__but">SEND</button>
+</div>`;
+  } else if (window.innerWidth <= 1024) {
+    document.querySelector(
+      ".contact__us-form"
+    ).innerHTML = `<h2 class="form__title">Hello, nice to meet you)</h2>
+          <div class="form__inputs-top">
+            <input class="name__input" placeholder="Name\Surname" type="text" />
+            <input class="email__input" placeholder="Email" type="text" />
+          </div>
+          <input class="mid__input" placeholder="Your message" type="text" />
+          <p></p>
+          <div class="form__bot">
+            <div class="form__confirm">
+              <label class="custom-checkbox">
+                <input type="checkbox" />
+                <span></span>
+              </label>
+              <p>i accept the terms&conditions</p>
+            </div>
+            <button class="form__but">SEND</button>
+          </div>`;
+  } else {
+    document.querySelector(
+      ".contact__us-form"
+    ).innerHTML = `<h2 class="form__title">Hello, nice to meet you)</h2>
+          <div class="form__inputs-top">
+            <input class="name__input" placeholder="Name\Surname" type="text" />
+            <input class="email__input" placeholder="Email" type="text" />
+          </div>
+          <input class="mid__input" placeholder="Your message" type="text" />
+          <p></p>
+          <div class="form__bot">
+            <div class="form__confirm">
+              <label class="custom-checkbox">
+                <input type="checkbox" />
+                <span></span>
+              </label>
+              <p>i accept the terms&conditions</p>
+            </div>
+            <button class="form__but">SEND</button>
+          </div>`;
+  }
 }
-}
+
+handleMediaChange();
+
+window.addEventListener("resize", handleMediaChange);
