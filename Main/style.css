@@ -1448,7 +1448,7 @@ body {
     margin: 0;
   }
   .page__main-block-3 {
-    padding-top: 60px;
+    padding: 60px 25px 0px 10px;
   }
   .main__block-3 {
   }
@@ -1463,12 +1463,13 @@ body {
     color: #2e2e2e;
   }
   .block-3__content {
+    width: 355px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
   }
   .volunteers,
   .participants,
