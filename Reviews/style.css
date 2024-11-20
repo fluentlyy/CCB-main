@@ -1,108 +1,130 @@
-@font-face {
-  font-family: 'NourdRegular';
-  src: url('path-to-your-font/Nourd-Regular.ttf') format('truetype');
-  font-weight: normal;
+.reviews {
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 80px 0 120px 0;
+}
+.reviews__title {
+  font-family: "Lubalin Graph";
   font-style: normal;
+  font-weight: 5;
+  font-size: 120px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #2e2e2e;
 }
-
-body {
-  font-family: 'NourdRegular', sans-serif;
-}
-
-.big_text {
-  font-size: 7vh;
-  margin-bottom: -20px;
-  margin-left: 10%;
-  font-weight: bold;
-}
-
-.small_text {
+.reviews__p {
   max-width: 670px;
-  font-size: 2vh;
-  margin-left: 10%;
-  line-height: 1.4;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #2e2e2e;
+  margin: 20px 0 40px 0;
 }
-
-.container_of_coniners{
+.reviews__cards {
+  max-width: 100%;
   display: flex;
-    
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: row; 
-  flex-wrap: wrap; 
-  height: 100%;
-  padding: 15px;
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-
-.inforamtion_desciption p{
-  margin-left: 2%;
-  width: 80%;
-  
-}
-
-.inforamtion_desciption{
+.reviews__but {
+  margin: 0 auto;
+  background: rgba(255, 238, 88, 1);
+  width: 183px;
+  height: 54px;
+  border-radius: 30px;
+  border: 1px solid #000;
   display: flex;
-  flex-direction: row;
-  align-items: center;   
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: "Lubalin Graph";
+  font-style: normal;
+  font-weight: 5;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2e2e2e;
 }
-
-.inforamtion_desciption svg{
-  width: 20px;
-  height: 20px;
-  margin-left: 210%;
-  scale: 1.2;
+.reviews__but:hover {
+  background: rgba(75, 97, 241, 1);
+  color: rgba(255, 254, 247, 1);
 }
-
-.reviews_container{
-  width: 45%;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding-left: 20px;
-  flex-wrap: wrap; 
-}
-.review_information{
-  margin-right: 2%;
-}
-.foto_name{
-  display: flex;
-  flex-direction: row;
-  
-  align-items: center;  
-}
-
-.foto_name img{
-  width:  10vh;
-  height: 10vh;
-  margin-left: 2%;
-  object-fit: cover;
-}
-
-.foto_name p{
-  margin-left: 20px;
-  font-size: 4vh;
-  font-style: bold;
-}
-
-
-@media  (max-width: 995px)  {
-  
-  .reviews{
-    display: flex;
+@media (max-width: 1024px) {
+  .reviews {
+    max-width: 964px;
+    margin: 60px 0 80px 0;
+  }
+  .reviews__p {
+    margin: 30px 0;
+  }
+  .slider__profile {
+    width: 308px;
+  }
+  .card__about {
+    width: auto;
+    align-items: flex-start;
+  }
+  .card__profile {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-  .inforamtion_desciption{
-    display: flex;
-    flex-direction: column;
+  .about__info {
+    margin-top: 10px;
   }
-  .inforamtion_desciption svg{
-    margin-left:0;
-    margin-bottom: 20px;
+  .card__about svg {
+    margin-top: 10px;
   }
-
-  .foto_name p {
-    font-size: 1.8vh;
+  .reviews__but {
+    margin-top: 30px;
+  }
 }
-} 
-
+@media (max-width: 375px) {
+  .reviews {
+    max-width: 355px;
+    margin: 40px 0 60px 0;
+  }
+  .reviews__title {
+    font-family: "Lubalin Graph";
+    font-style: normal;
+    font-weight: 5;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #2e2e2e;
+  }
+  .reviews__p {
+    max-width: 100%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    color: #2e2e2e;
+    margin: 20px 0;
+  }
+  .slider__profile {
+    width: 100%;
+  }
+  .card__profile {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .card__about svg {
+    margin-top: 20px;
+  }
+  .reviews__but {
+    margin-top: 20px;
+  }
+}
