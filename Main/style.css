@@ -1473,7 +1473,7 @@ body {
     color: #2e2e2e;
   }
   .block-3__content {
-    width: 355px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1485,7 +1485,8 @@ body {
   .participants,
   .successful-projects-1,
   .successful-projects-2 {
-    width: 100%;
+    max-width: 100%;
+    width: 500px;
     height: 250px;
     position: inherit;
     top: 0;
