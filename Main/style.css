@@ -792,15 +792,15 @@ body {
   opacity: 0.8;
   margin-top: 20px;
 }
-
+.page__block-social {
+  padding-top: 120px;
+}
 .block__social {
-  width: 1360px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 50px;
-  margin: 0 0 120px 0;
 }
 .social__title {
   font-family: "Lubalin Graph";
@@ -1397,6 +1397,10 @@ body {
   }
   .header__nav {
     margin-bottom: 137px;
+  }
+  .list__item:nth-child(8) {
+    top: 35px;
+    left: 30px;
   }
   .main__block-1 {
     padding: 40px 0;
