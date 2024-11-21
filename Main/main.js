@@ -258,9 +258,9 @@ function handleMediaChange() {
   <a class="bot__icon">LN</a>
 </div>`;
     document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
-      let currentIndex = 0;
-      let startX = 0;
-      let endX = 0;
+      let startX = 0; // Початкова координата дотику
+      let endX = 0; // Кінцева координата дотику
+      let currentIndex = 0; // Поточний індекс слайда
 
       // Функція для оновлення позиції слайдера
       function updateSliderPosition() {
@@ -273,34 +273,31 @@ function handleMediaChange() {
       // Оновлення позиції слайдера при завантаженні сторінки
       updateSliderPosition();
 
-      // Обробка початку свайпу
-      sliderCards.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX; // Запам'ятовуємо початкову позицію
+      // Обробник початку свайпу
+      sliderCards.addEventListener("touchstart", (event) => {
+        startX = event.touches[0].clientX; // Зчитуємо початкову координату дотику
       });
 
-      // Обробка завершення свайпу
-      sliderCards.addEventListener("touchend", (e) => {
-        endX = e.changedTouches[0].clientX; // Запам'ятовуємо кінцеву позицію
-        handleSwipe();
-      });
+      // Обробник закінчення свайпу
+      sliderCards.addEventListener("touchend", (event) => {
+        endX = event.changedTouches[0].clientX; // Зчитуємо кінцеву координату дотику
+        const swipeDistance = endX - startX; // Визначаємо напрямок свайпу
 
-      // Функція для обробки свайпу
-      function handleSwipe() {
-        const swipeDistance = startX - endX;
+        // Свайп вправо
+        if (swipeDistance > 50 && currentIndex > 0) {
+          currentIndex--;
+          updateSliderPosition();
+        }
 
-        // Перевірка напрямку свайпу
+        // Свайп вліво
         if (
-          swipeDistance > 50 &&
+          swipeDistance < -50 &&
           currentIndex < sliderCards.children.length - 1
         ) {
-          // Свайп вліво
           currentIndex++;
-        } else if (swipeDistance < -50 && currentIndex > 0) {
-          // Свайп вправо
-          currentIndex--;
+          updateSliderPosition();
         }
-        updateSliderPosition();
-      }
+      });
     });
   } else if (window.innerWidth <= 1024) {
     document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
