@@ -658,13 +658,13 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.slider__card:active {
+.slider__card:hover {
   background: rgba(75, 97, 241, 1);
 }
-.slider__card:active .card__info h2 {
+.slider__card:hover .card__info h2 {
   color: rgba(255, 254, 247, 1);
 }
-.slider__card:active .card__info p {
+.slider__card:hover .card__info p {
   color: rgba(255, 254, 247, 1);
 }
 .card__img {
@@ -1696,5 +1696,9 @@ body {
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #fffef7;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .slider__card:hover {
   }
 }
