@@ -1554,7 +1554,7 @@ body {
     display: none;
   }
   .slider__cards {
-    width: 100%;
+    max-width: 355px;
     margin: 0 auto;
   }
   .slider__card {
@@ -1700,6 +1700,5 @@ body {
 }
 @media (hover: none) and (pointer: coarse) {
   .slider__card:hover {
-    background: rgba(255, 254, 247, 1);
   }
 }
