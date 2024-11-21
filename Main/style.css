@@ -658,13 +658,13 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.slider__card:hover {
+.slider__card:active {
   background: rgba(75, 97, 241, 1);
 }
-.slider__card:hover .card__info h2 {
+.slider__card:active .card__info h2 {
   color: rgba(255, 254, 247, 1);
 }
-.slider__card:hover .card__info p {
+.slider__card:active .card__info p {
   color: rgba(255, 254, 247, 1);
 }
 .card__img {
