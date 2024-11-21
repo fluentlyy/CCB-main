@@ -1700,5 +1700,6 @@ body {
 }
 @media (hover: none) and (pointer: coarse) {
   .slider__card:hover {
+    background: rgba(255, 254, 247, 1);
   }
 }
