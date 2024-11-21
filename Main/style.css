@@ -349,7 +349,7 @@ body {
   font-weight: 5;
   line-height: 70px;
   letter-spacing: -0.05em;
-  text-align: left;
+  text-align: center;
 }
 .content__text {
   padding-left: 20px;
@@ -535,7 +535,7 @@ body {
   text-transform: uppercase;
   color: #4b61f1;
 }
-.page__block__video {
+.page__block-video {
   padding-top: 120px;
 }
 .block__video {
@@ -555,21 +555,28 @@ body {
   color: #2e2e2e;
   margin-bottom: 40px;
 }
+.video__container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
 .video {
-  max-width: 1360px;
-  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
 }
+.page__block-projects {
+  padding-top: 120px;
+}
 .block__projects {
-  width: 1360px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 120px;
 }
 .project__content {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -580,13 +587,13 @@ body {
   font-weight: 5;
   font-size: 70px;
   line-height: 100%;
-
   letter-spacing: -0.05em;
   text-transform: uppercase;
   color: #2e2e2e;
 }
 .project__text {
-  width: 570px;
+  max-width: 570px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -638,7 +645,7 @@ body {
   flex-wrap: nowrap;
 }
 .slider__card {
-  width: 670px;
+  max-width: 670px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1274,6 +1281,8 @@ body {
       transform: translate3d(-365px, 0, 0);
     }
   }
+  .page__main-block-3 {
+  }
   .main__block-3 {
   }
   .block-3__title {
@@ -1298,16 +1307,17 @@ body {
     top: 454px;
     left: 469px;
   }
-  .block__video {
-    width: 964px;
-    margin: 80px 0;
+  .page__block-video {
+    padding-top: 80px;
   }
-  .video {
-    width: 964px;
-    height: 600px;
+  .block__video {
+  }
+  .video__container {
+  }
+  .page__block-projects {
+    padding-top: 80px;
   }
   .block__projects {
-    width: 964px;
   }
   .project__content {
     flex-direction: column;
@@ -1315,12 +1325,12 @@ body {
   }
   .project__text {
     margin-top: 20px;
+    padding: 0;
   }
   .project__slider {
     margin-top: 30px;
   }
   .slider__cards {
-    width: 964px;
   }
   .block__social {
     width: 964px;
@@ -1493,9 +1503,10 @@ body {
     text-transform: uppercase;
     color: #4b61f1;
   }
+  .page__block-video {
+    padding: 60px 10px 0 10px;
+  }
   .block__video {
-    width: 355px;
-    margin: 60px 0;
   }
   .video__title {
     font-family: "Lubalin Graph";
@@ -1508,13 +1519,12 @@ body {
     color: #2e2e2e;
     margin-bottom: 20px;
   }
-  .video {
-    width: 100%;
-    height: 500px;
+  .video__container {
+  }
+  .page__block-projects {
+    padding: 60px 10px 0 10px;
   }
   .block__projects {
-    width: 355px;
-    margin-bottom: 60px;
   }
   .project__title {
     font-family: "Lubalin Graph";
@@ -1538,14 +1548,17 @@ body {
     letter-spacing: -0.05em;
     color: #2e2e2e;
   }
+  .project__slider {
+  }
   .slider__buttons {
     display: none;
   }
   .slider__cards {
     width: 355px;
+    margin: 0 auto;
   }
   .slider__card {
-    width: 355px;
+    margin: 0 auto;
   }
   .card__img {
     width: 315px;

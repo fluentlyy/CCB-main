@@ -20,7 +20,7 @@ if (document.querySelector(".nav__list").classList.toggle("open")) {
 }
 
 function handleMediaChange() {
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <= 434) {
     document.querySelector(
       ".footer__body"
     ).innerHTML = `<div class="footer__top">
@@ -257,6 +257,51 @@ function handleMediaChange() {
   <a class="bot__icon">TT</a>
   <a class="bot__icon">LN</a>
 </div>`;
+    document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
+      let currentIndex = 0;
+      let startX = 0;
+      let endX = 0;
+
+      // Функція для оновлення позиції слайдера
+      function updateSliderPosition() {
+        const cardWidth = sliderCards.children[0].offsetWidth + 20; // Ширина картки + відступ
+        sliderCards.style.transform = `translateX(-${
+          currentIndex * cardWidth
+        }px)`;
+      }
+
+      // Оновлення позиції слайдера при завантаженні сторінки
+      updateSliderPosition();
+
+      // Обробка початку свайпу
+      sliderCards.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX; // Запам'ятовуємо початкову позицію
+      });
+
+      // Обробка завершення свайпу
+      sliderCards.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX; // Запам'ятовуємо кінцеву позицію
+        handleSwipe();
+      });
+
+      // Функція для обробки свайпу
+      function handleSwipe() {
+        const swipeDistance = startX - endX;
+
+        // Перевірка напрямку свайпу
+        if (
+          swipeDistance > 50 &&
+          currentIndex < sliderCards.children.length - 1
+        ) {
+          // Свайп вліво
+          currentIndex++;
+        } else if (swipeDistance < -50 && currentIndex > 0) {
+          // Свайп вправо
+          currentIndex--;
+        }
+        updateSliderPosition();
+      }
+    });
   } else if (window.innerWidth <= 1024) {
     document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
       const leftButton =
