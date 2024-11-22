@@ -299,7 +299,7 @@ function handleMediaChange() {
         }
       });
     });
-  } else if (window.innerWidth <= 760) {
+  } else if (window.innerWidth <= 830) {
     document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
       const leftButton =
         sliderCards.parentElement.querySelector(".arrow__left");
