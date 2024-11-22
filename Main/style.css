@@ -94,7 +94,7 @@ body {
   overflow: hidden;
 }
 .header {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 ._container {
   max-width: 1360px;
@@ -129,7 +129,8 @@ body {
   margin-right: 20px;
 }
 .list__item:last-child {
-  margin-right: 27px;
+  padding-right: 27px;
+  margin: 0;
 }
 .header__logo {
   min-width: 125px;
@@ -254,7 +255,7 @@ body {
 }
 .main-block {
   box-sizing: content-box;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .page__main-block-1 {
   padding-top: 20px;
@@ -433,6 +434,8 @@ body {
   color: #2e2e2e;
 }
 .block-3__content {
+  max-width: 1360px;
+  width: 100%;
   height: 745px;
   position: relative;
 }
@@ -704,8 +707,12 @@ body {
   opacity: 0.6;
   margin: 0;
 }
+.slider__buttons-box {
+  max-width: 670px;
+  width: 100%;
+}
 .slider__buttons {
-  width: 670px;
+  width: 100%;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -798,11 +805,12 @@ body {
 .block__social {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 50px;
 }
 .social__title {
+  width: 100%;
   font-family: "Lubalin Graph";
   font-style: normal;
   font-weight: 5;
@@ -812,15 +820,14 @@ body {
   text-transform: uppercase;
   color: #2e2e2e;
   margin: 0;
+  text-align: left;
 }
 .social__media {
   max-width: 805px;
-  height: 185.5px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 11px;
-  margin-left: 255px;
 }
 .facebook {
   width: 230px;
@@ -1091,9 +1098,12 @@ body {
   line-height: 100%;
   color: #fffef7;
 }
-@media (max-width: 1360px) {
-  .header {
+@media (max-width: 1400px) {
+  .slider__cards {
+    max-width: 670px;
   }
+}
+@media (max-width: 1360px) {
   .nav__list {
     padding-left: 20px;
   }
@@ -1107,17 +1117,29 @@ body {
 }
 
 @media (max-width: 1220px) {
-  .list__item {
+  /*   .list__item {
     margin-right: 30px;
   }
   .list__item:last-child {
     margin: 0;
+  } */
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    display: none;
+  }
+  .header__logo-adaptive {
+    display: block;
+    min-width: 49px;
+  }
+  .list__item:nth-child(6) {
+    margin-right: 83px;
   }
 }
 @media (max-width: 1155px) {
-  .list__item:nth-child(6) {
+  /*   .list__item:nth-child(6) {
     margin-right: 30px;
-  }
+  } */
 }
 @media (max-width: 1140px) {
 }

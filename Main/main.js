@@ -299,7 +299,7 @@ function handleMediaChange() {
         }
       });
     });
-  } else if (window.innerWidth <= 1024) {
+  } else if (window.innerWidth <= 760) {
     document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
       const leftButton =
         sliderCards.parentElement.querySelector(".arrow__left");
@@ -336,6 +336,7 @@ function handleMediaChange() {
         }
       });
     });
+  } else if (window.innerWidth <= 1024) {
     document.querySelector(
       ".footer__body"
     ).innerHTML = `<div class="footer__top">
@@ -571,6 +572,43 @@ function handleMediaChange() {
   <a class="bot__icon">TT</a>
   <a class="bot__icon">LN</a>
 </div> `;
+  } else if (window.innerWidth <= 1400) {
+    document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
+      const leftButton =
+        sliderCards.parentElement.querySelector(".arrow__left");
+      const rightButton =
+        sliderCards.parentElement.querySelector(".arrow__right");
+
+      let currentIndex = 1;
+
+      // Функція для оновлення позиції слайдера
+      function updateSliderPosition() {
+        const cardWidth = sliderCards.children[0].offsetWidth + 20; // Ширина картки + відступ
+        sliderCards.style.transform = `translateX(-${
+          currentIndex * cardWidth
+        }px)`; // Переміщуємо на ширину однієї картки
+      }
+
+      // Оновлення позиції слайдера при завантаженні сторінки
+      updateSliderPosition();
+
+      // Обробник для кнопки "вправо"
+      rightButton.addEventListener("click", () => {
+        if (currentIndex < sliderCards.children.length - 1) {
+          // Коригуємо умову
+          currentIndex++;
+          updateSliderPosition();
+        }
+      });
+
+      // Обробник для кнопки "вліво"
+      leftButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSliderPosition();
+        }
+      });
+    });
   } else {
     document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
       const leftButton =
