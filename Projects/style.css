@@ -1,19 +1,15 @@
 .body__container {
-  align-items: center;
-  justify-content: center;
 }
 
 .main__projects {
-  max-width: 1360px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 40px;
-  margin: 80px 0 120px 0;
 }
 .project__content {
-  width: 670px;
+  max-width: 670px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,14 +44,17 @@
   gap: 20px;
 }
 .slider__card {
+  max-width: 670px;
+  width: 100%;
 }
 .card__img {
+  max-width: 630px;
+  width: 100%;
 }
 .card__info {
 }
 @media (max-width: 1024px) {
   .project__content {
-    width: 656px;
     margin: 60px 0 80px 0;
   }
   .main__projects {
