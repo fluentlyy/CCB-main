@@ -18,7 +18,7 @@ burger.addEventListener("click", function () {
 if (document.querySelector(".nav__list").classList.toggle("open")) {
   dropdown.style.display = "block";
 }
-
+let blockTitle3 = document.querySelector(".block-3__title");
 function handleMediaChange() {
   if (window.innerWidth <= 434) {
     document.querySelector(".nav__list").innerHTML = `<div class="list__box">
@@ -300,6 +300,8 @@ function handleMediaChange() {
     <a class="bot__design">Design</a>
   </div>
 </div>`;
+  } else if (window.innerWidth <= 633) {
+    blockTitle3.innerHTML = "achieves";
   } else if (window.innerWidth <= 786) {
     document.querySelector(
       ".footer__body"
