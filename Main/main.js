@@ -961,7 +961,7 @@ function handleMediaChange() {
     />
   </svg>
   <li class="list__item">
-    <a href="" class="nav__link">PROJECT</a>
+    <a href="../Projects/index.html" class="nav__link">PROJECT</a>
   </li>
   <li class="list__item">
     <a href="" class="nav__link">TEAM</a>
