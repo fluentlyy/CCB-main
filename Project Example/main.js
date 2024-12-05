@@ -8,7 +8,15 @@ function handleMediaChange() {
               <div class="img__small"></div>
               <div class="mid__img"></div>
             `;
-  } else if (window.innerWidth <= 1024) {
+  } else if (window.innerWidth <= 1055) {
+    document.querySelector(".about-projects__imgs").innerHTML = `
+              <div class="img__small"></div>
+              <div class="img__small"></div>
+              <div class="img__small"></div>
+              <div class="img__small"></div>
+              <div class="mid__img"></div>
+            `;
+  } else if (window.innerWidth <= 1055) {
     document.querySelector(
       ".about-projects__imgs"
     ).innerHTML = `<div class="about-projects__imgs">

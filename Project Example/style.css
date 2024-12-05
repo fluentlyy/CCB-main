@@ -1,14 +1,12 @@
 .body__container {
-  align-items: center;
-  justify-content: center;
 }
 .main__about-projects {
-  max-width: 1360px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 80px 0 120px 0;
+  padding: 0 20px;
 }
 .about-projects__title {
   font-family: "Lubalin Graph";
@@ -21,7 +19,7 @@
   color: #2e2e2e;
 }
 .about-projects__text {
-  width: 670px;
+  max-width: 670px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,26 +73,7 @@
   background: #d9d9d9;
   border-radius: 30px;
 }
-@media (max-width: 1024px) {
-  .main__about-projects {
-    max-width: 964px;
-    align-items: flex-start;
-    margin: 60px 0 80px 0;
-  }
-  .about-projects__title {
-    font-family: "Lubalin Graph";
-    font-style: normal;
-    font-weight: 5;
-    font-size: 70px;
-    line-height: 100%;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
-    color: #2e2e2e;
-  }
-  .about-projects__text {
-    width: 635px;
-    margin: 20px 0 40px 0;
-  }
+@media (max-width: 1055px) {
   .mid__img {
     width: 636px;
     height: 308px;
@@ -111,10 +90,52 @@
     height: 308px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   .main__about-projects {
-    max-width: 355px;
-    margin: 40px 0 60px 0;
+    margin-top: 60px;
+    align-items: flex-start;
+  }
+  .about-projects__title {
+    font-family: "Lubalin Graph";
+    font-style: normal;
+    font-weight: 5;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #2e2e2e;
+  }
+  .about-projects__text {
+    max-width: 635px;
+    margin: 20px 0 40px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .main__about-projects {
+    align-items: center;
+  }
+  .about-projects__title {
+    text-align: center;
+  }
+  .about-projects__imgs {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: initial;
+  }
+}
+@media (max-width: 675px) {
+  .mid__img,
+  .img__small {
+    width: 355px;
+    height: 355px;
+  }
+  .about-projects__imgs {
+    gap: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .main__about-projects {
+    margin-top: 40px;
   }
   .about-projects__title {
     font-family: "Lubalin Graph";
@@ -125,10 +146,7 @@
     letter-spacing: -0.05em;
     text-transform: uppercase;
     color: #2e2e2e;
-  }
-  .about-projects__text {
-    width: 100%;
-    margin: 20px 0;
+    text-align: left;
   }
   .about-projects__text h5 {
     font-family: "Inter";
@@ -147,13 +165,5 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     color: #2e2e2e;
-  }
-  .about-projects__imgs {
-    gap: 10px;
-  }
-  .mid__img,
-  .img__small {
-    width: 355px;
-    height: 355px;
   }
 }
