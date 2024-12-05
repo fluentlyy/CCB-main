@@ -1529,6 +1529,9 @@ body {
   }
   ._container {
   }
+  .main-block {
+    padding: 0 10px;
+  }
   .page__main-block-1 {
   }
   .main-block:not(:first-child) {
