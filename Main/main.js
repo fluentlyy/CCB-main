@@ -21,7 +21,7 @@ if (document.querySelector(".nav__list").classList.toggle("open")) {
 let blockTitle3 = document.querySelector(".block-3__title");
 function handleMediaChange() {
   if (window.innerWidth <= 434) {
-    /* document.querySelector(".nav__list").innerHTML = `<div class="list__box">
+    document.querySelector(".nav__list").innerHTML = `<div class="list__box">
   <a href="../Main/index.html" class="adaptive-logo__list"
     ><svg
       class=""
@@ -44,27 +44,25 @@ function handleMediaChange() {
         fill="#FFEE58"
       /></svg
   ></a>
-
+  
   <li class="list__item">
-                <a href="../Projects/index.html" class="nav__link">PROJECTS</a>
-              </li>
-              <li class="list__item">
-                <a href="../Team/index.html" class="nav__link">TEAM</a>
-              </li>
-              <li class="list__item">
-                <a href="../About Us/index.html" class="nav__link">ABOUT US</a>
-              </li>
-              <li class="list__item">
-                <a href="../Contact Us/index.html" class="nav__link"
-                  >CONTACT US</a
-                >
-              </li>
-              <li class="list__item">
-                <a href="../History/index.html" class="nav__link">HISTORY</a>
-              </li>
-              <li class="list__item">
-                <a href="../Reviews/index.html" class="nav__link">REVIEWS</a>
-              </li>
+    <a href="../Projects/index.html" class="nav__link">PROJECTS</a>
+  </li>
+  <li class="list__item">
+    <a href="../Team/index.html" class="nav__link">TEAM</a>
+  </li>
+  <li class="list__item">
+    <a href="../About Us/index.html" class="nav__link">ABOUT US</a>
+  </li>
+  <li class="list__item">
+    <a href="../Contact Us/index.html" class="nav__link">CONTACT US</a>
+  </li>
+  <li class="list__item">
+    <a href="../History/index.html" class="nav__link">HISTORY</a>
+  </li>
+  <li class="list__item">
+    <a href="../Reviews/index.html" class="nav__link">REVIEWS</a>
+  </li>
   <li class="list__item">
     <div class="language-dropdown">
       <button
@@ -111,7 +109,7 @@ function handleMediaChange() {
   <a class="bot__icon">FB</a>
   <a class="bot__icon">TT</a>
   <a class="bot__icon">LN</a>
-</div>`; */
+</div>`;
     document.querySelectorAll(".slider__cards").forEach((sliderCards) => {
       let startX = 0; // Початкова координата дотику
       let endX = 0; // Кінцева координата дотику
