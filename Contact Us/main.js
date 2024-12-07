@@ -1,5 +1,5 @@
 function handleMediaChange() {
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <= 568) {
     document.querySelector(
       ".contact__us-form"
     ).innerHTML = `<h2 class="form__title">Hello, nice to meet you)</h2>
