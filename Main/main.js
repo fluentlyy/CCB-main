@@ -47,20 +47,20 @@ function handleMediaChange() {
     <a href="../Projects/index.html" class="nav__link">PROJECTS</a>
   </li>
   <li class="list__item">
-    <a href="" class="nav__link">TEAM</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">ABOUT US</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">CONTACT US</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">HISTORY</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">REVIEWS</a>
-  </li>
+    <a href="../Team/index.html" class="nav__link">TEAM</a>
+   </li>
+   <li class="list__item">
+     <a href="../About Us/index.html" class="nav__link">ABOUT US</a>
+   </li>
+   <li class="list__item">
+     <a href="../Contact Us/" class="nav__link">CONTACT US</a>
+   </li>
+   <li class="list__item">
+     <a href="../History/index.html" class="nav__link">HISTORY</a>
+   </li>
+   <li class="list__item">
+     <a href="../Reviews/index.html" class="nav__link">REVIEWS</a>
+   </li>
   <li class="list__item">
     <div class="language-dropdown">
       <button
@@ -961,23 +961,23 @@ function handleMediaChange() {
     />
   </svg>
   <li class="list__item">
-    <a href="../Projects/index.html" class="nav__link">PROJECTS</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">TEAM</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">ABOUT US</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">CONTACT US</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">HISTORY</a>
-  </li>
-  <li class="list__item">
-    <a href="" class="nav__link">REVIEWS</a>
-  </li>
+                <a href="../Projects/index.html" class="nav__link">PROJECTS</a>
+              </li>
+              <li class="list__item">
+                <a href="../Team/index.html" class="nav__link">TEAM</a>
+              </li>
+              <li class="list__item">
+                <a href="../About Us/index.html" class="nav__link">ABOUT US</a>
+              </li>
+              <li class="list__item">
+                <a href="../Contact Us/" class="nav__link">CONTACT US</a>
+              </li>
+              <li class="list__item">
+                <a href="../History/index.html" class="nav__link">HISTORY</a>
+              </li>
+              <li class="list__item">
+                <a href="../Reviews/index.html" class="nav__link">REVIEWS</a>
+              </li>
   <li class="list__item">
     <div class="language-dropdown">
       <button
