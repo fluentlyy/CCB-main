@@ -1,10 +1,10 @@
 .our-history {
-  max-width: 1360px;
+  margin-top: 80px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  margin: 80px 0 100px 0;
+  padding: 0 20px;
 }
 .our-history__title {
   font-family: "Lubalin Graph";
@@ -34,7 +34,6 @@ our-history__block {
   display: none;
 }
 .our-history__block-1 {
-  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +85,6 @@ our-history__block {
   color: #2e2e2e;
 }
 .our-history__block-2 {
-  max-width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -145,6 +143,8 @@ our-history__block {
   line-height: 120%;
   letter-spacing: -0.05em;
   color: #2e2e2e;
+}
+@media (max-width: 1133px) {
 }
 @media (max-width: 1024px) {
   .our-history {

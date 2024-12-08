@@ -95,10 +95,38 @@
     justify-content: center;
   }
 }
-@media (max-width: 375px) {
-  .reviews {
+@media (max-width: 675px) {
+  .slider__profile {
     max-width: 355px;
-    margin: 40px 0 60px 0;
+    width: 100%;
+  }
+  .card__about svg {
+    margin-top: 20px;
+  }
+  .card__profile {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .reviews__cards {
+    gap: 10px;
+  }
+}
+@media (max-width: 610px) {
+  .reviews__title {
+    font-size: 90px;
+  }
+  .reviews {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 468px) {
+  .reviews__title {
+    font-size: 75px;
+  }
+}
+@media (max-width: 435px) {
+  .reviews {
+    padding: 0 10px;
   }
   .reviews__title {
     font-family: "Lubalin Graph";
@@ -120,19 +148,5 @@
     letter-spacing: -0.05em;
     color: #2e2e2e;
     margin: 20px 0;
-  }
-  .slider__profile {
-    width: 100%;
-  }
-  .card__profile {
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-  }
-  .card__about svg {
-    margin-top: 20px;
-  }
-  .reviews__but {
-    margin-top: 20px;
   }
 }
