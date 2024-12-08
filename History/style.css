@@ -1,10 +1,12 @@
+._container {
+  padding: 0 20px;
+}
 .our-history {
   margin-top: 80px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
 }
 .our-history__title {
   font-family: "Lubalin Graph";
@@ -41,9 +43,9 @@ our-history__block {
   margin-bottom: 80px;
 }
 .block-1__imgs {
+  max-width: 670px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 .block-1__img {
@@ -144,12 +146,29 @@ our-history__block {
   letter-spacing: -0.05em;
   color: #2e2e2e;
 }
+.block__volunteers {
+  margin-top: 100px;
+}
 @media (max-width: 1133px) {
+  .our-history__block-1 {
+    flex-direction: column;
+  }
+  .block-1__content {
+    flex-direction: column;
+  }
+  .content__txt-bot {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content__txt-top {
+    width: 100%;
+  }
+  .content__txt-bot p {
+    width: 100%;
+  }
 }
 @media (max-width: 1024px) {
   .our-history {
-    max-width: 964px;
-    margin: 60px 0 90px 0;
   }
   .our-history__title {
     font-family: "Lubalin Graph";
@@ -190,6 +209,35 @@ our-history__block {
   }
   .block-2__text {
     max-width: 100%;
+  }
+  .block__volunteers {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 710px) {
+  .our-history__block {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .block-1__imgs {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+  }
+  .block-1__img {
+    width: 325px;
+    height: 325px;
+  }
+  .content__txt-bot p {
+    width: 100%;
+  }
+  .content__txt-top {
+    width: 100%;
+  }
+  .our-history__block-1 {
+    margin-bottom: 30px;
+  }
+  .our-history__block-2 {
   }
 }
 @media (max-width: 375px) {
