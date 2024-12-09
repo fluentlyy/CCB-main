@@ -1,4 +1,4 @@
-._container {
+._container:not(:last-child) {
   padding: 0 20px;
 }
 .our-history {
@@ -43,18 +43,20 @@ our-history__block {
   margin-bottom: 80px;
 }
 .block-1__imgs {
-  max-width: 670px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .block-1__img {
+  flex: 1;
   width: 325px;
   height: 325px;
   background: rgba(217, 217, 217, 1);
   border-radius: 30px;
 }
 .block-1__content {
+  max-width: 670px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,6 +171,7 @@ our-history__block {
 }
 @media (max-width: 1024px) {
   .our-history {
+    margin-top: 60px;
   }
   .our-history__title {
     font-family: "Lubalin Graph";
@@ -203,6 +206,7 @@ our-history__block {
   .block-1__img {
     width: 308px;
     height: 308px;
+    flex: auto;
   }
   .our-history__block-2 {
     flex-direction: column;
@@ -225,7 +229,8 @@ our-history__block {
     max-width: 100%;
   }
   .block-1__img {
-    width: 325px;
+    max-width: 325px;
+    width: 100%;
     height: 325px;
   }
   .content__txt-bot p {
@@ -240,10 +245,20 @@ our-history__block {
   .our-history__block-2 {
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 636px) {
+  .our-history__block-1 {
+    margin-bottom: 20px;
+  }
+  .block-1__imgs {
+    flex-direction: column;
+  }
+  .our-history__block-2 {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 4355px) {
   .our-history {
-    max-width: 355px;
-    margin: 40px 0 60px 0;
+    margin-top: 40px;
   }
   .our-history__title {
     font-family: "Lubalin Graph";
@@ -284,7 +299,7 @@ our-history__block {
     margin-bottom: 60px;
   }
   .block-1__img {
-    width: 100%;
+    max-width: 355px;
     height: 355px;
   }
   .block-2__title {

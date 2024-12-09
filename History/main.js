@@ -1,5 +1,5 @@
 function handleMediaChange() {
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <= 636) {
     document.querySelector(
       ".our-history__block"
     ).innerHTML = `<div class="our-history__blocks">
