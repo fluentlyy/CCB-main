@@ -256,7 +256,10 @@ our-history__block {
     margin-top: 60px;
   }
 }
-@media (max-width: 4355px) {
+@media (max-width: 435px) {
+  ._container:not(:last-child) {
+    padding: 0 10px;
+  }
   .our-history {
     margin-top: 40px;
   }
@@ -280,9 +283,6 @@ our-history__block {
     text-transform: uppercase;
     color: #2e2e2e;
     margin: 20px 0;
-  }
-  .our-history__block {
-    flex-direction: column;
   }
   .our-history__block-1 {
     margin-bottom: 20px;

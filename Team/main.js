@@ -1,39 +1,24 @@
- // Dropdown function to toggle visibility
- function toggleDropdown() {
-    const dropdownList = document.querySelector('.dropdown-list');
-    dropdownList.classList.toggle('show');
+let img = document.querySelector(".script__img");
+let founderTitle = document.querySelector(".our__founder-title");
+let contentTitle = document.querySelector(".content__subtitle");
+let contentParagraph = document.querySelector(".content__paragraph");
+function handleMediaChange() {
+  if (window.innerWidth <= 730) {
+    img.src = "./img/founder.png";
+    founderTitle.textContent = "our Founder";
+    contentTitle.textContent = "Natalia Batkivna";
+    contentParagraph.textContent =
+      "(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.";
+  } else if (window.innerWidth <= 1024) {
+    founderTitle.textContent = "our Founder";
+    contentTitle.textContent = "Natalia Batkivna";
+    contentParagraph.textContent =
+      "(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.";
+  } else if (window.innerWidth <= 1400) {
+    img.src = "./img/founder-adaptive.png";
+  }
 }
 
-// Function to select dropdown option
-function selectOption(lang) {
-    document.querySelector('.dropdown-selected').textContent = lang;
-    toggleDropdown();
-}
+handleMediaChange();
 
-// Dropdown for the footer part
-function toggleDropdownNew() {
-    const dropdownListNew = document.querySelector('.dropdown-list-new');
-    dropdownListNew.classList.toggle('show');
-}
-
-function selectOptionNew(lang) {
-    document.querySelector('.dropdown-selected-new').textContent = lang;
-    toggleDropdownNew();
-}
-
-// Close the dropdowns if clicked outside
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-select')) {
-        const dropdownList = document.querySelector('.dropdown-list');
-        if (dropdownList.classList.contains('show')) {
-            dropdownList.classList.remove('show');
-        }
-    }
-
-    if (!event.target.matches('.dropdown-select-new')) {
-        const dropdownListNew = document.querySelector('.dropdown-list-new');
-        if (dropdownListNew.classList.contains('show')) {
-            dropdownListNew.classList.remove('show');
-        }
-    }
-}
+window.addEventListener("resize", handleMediaChange);
