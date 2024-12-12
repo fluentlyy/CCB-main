@@ -1523,6 +1523,11 @@ body {
     white-space: nowrap;
   }
 }
+@media (max-width: 495px) {
+  .volunteers__title {
+    font-size: 60px;
+  }
+}
 @media (max-width: 435px) {
   .header {
     padding: 0 10px;
