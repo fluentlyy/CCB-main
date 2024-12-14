@@ -1,23 +1,24 @@
 .about__us {
-  margin-top: 80px;
+}
+._container:not(:last-child) {
   padding: 0 20px;
 }
-._container {
-}
-.abouts__us-head {
+.about__us-head {
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 .content__info {
-  max-width: 676px;
+  max-width: 670px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 20px;
-  height: 580px;
-  position: relative;
+}
+.info__box {
 }
 .about__us-title {
   font-family: "Lubalin Graph";
@@ -39,11 +40,7 @@
   color: #2e2e2e;
 }
 .about__us-img {
-  width: 482px;
-  height: 405px;
-  position: absolute;
-  bottom: 0;
-  left: 14%;
+  margin: 0 auto;
 }
 .content__img {
   max-width: 670px;
@@ -51,4 +48,288 @@
   height: 580px;
   background: #d9d9d9;
   border-radius: 30px;
+}
+.about__us-blue {
+  background: #4b61f1;
+  border-radius: 30px;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.about__us-blue p {
+  font-family: "Lubalin Graph";
+  font-style: normal;
+  font-weight: 5;
+  font-size: 70px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fffef7;
+}
+.about__us-volunteers {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.volunteers__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.top__title {
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.top__title h1 {
+  font-family: "Lubalin Graph";
+  font-style: normal;
+  font-weight: 5;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #2e2e2e;
+}
+.title__imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.img__flamenko {
+}
+.img__guitar {
+}
+.top__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  color: #2e2e2e;
+  max-width: 670px;
+}
+.volunteers__bot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.bot__img {
+  background: #d9d9d9;
+  border-radius: 30px;
+}
+.small {
+  width: 325px;
+  height: 325px;
+  grid-column: span 1;
+}
+.big {
+  max-width: 670px;
+  width: 100%;
+  height: 325px;
+  grid-column: span 2;
+}
+@media (max-width: 1366px) {
+  .about__us-title {
+    white-space: nowrap;
+    font-size: 100px;
+  }
+}
+@media (max-width: 1075px) {
+  .volunteers__bot {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .big {
+    max-width: 325px;
+    grid-column: span 1;
+  }
+}
+@media (max-width: 1057px) {
+  .bot__img {
+    max-width: 308px;
+    height: 308px;
+  }
+}
+@media (max-width: 1190px) {
+  .about__us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 670px;
+  }
+  .about__us-head {
+    flex-direction: column;
+  }
+  .content__info {
+    max-width: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .about__us-img {
+    width: 278px;
+    margin: 0;
+  }
+  .content__img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 50.5%;
+  }
+}
+@media (max-width: 1270px) {
+  .volunteers__top {
+    max-width: 100%;
+    width: 100%;
+    align-items: flex-end;
+  }
+  .top__title {
+    gap: 20px;
+  }
+  .title__imgs {
+    flex-direction: row;
+  }
+}
+@media (max-width: 1024px) {
+  .about__us-head {
+    margin-top: 60px;
+    gap: 71px;
+  }
+  .about__us-blue {
+    padding: 60px 0;
+    margin-top: 80px;
+  }
+  .about__us-volunteers {
+    margin-top: 80px;
+  }
+  .team__block-2 {
+    margin-top: 80px;
+  }
+  .img__flamenko {
+    width: 216px;
+  }
+  .img__guitar {
+    width: 186px;
+  }
+}
+@media (max-width: 1004px) {
+  .volunteers__bot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 876px) {
+  .about__us-blue p {
+    font-size: 55px;
+  }
+}
+@media (max-width: 853px) {
+  .about__us-title {
+    font-size: 90px;
+  }
+}
+@media (max-width: 818px) {
+  .volunteers__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .volunteers__top h1 {
+    font-family: "Lubalin Graph";
+    font-style: normal;
+    font-weight: 5;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #2e2e2e;
+  }
+  .title__imgs {
+    flex-direction: row-reverse;
+  }
+  .top__text {
+    max-width: 100%;
+  }
+}
+@media (max-width: 802px) {
+  .about__us-title {
+    font-size: 80px;
+  }
+}
+@media (max-width: 729px) {
+  .about__us-img {
+    display: none;
+  }
+}
+@media (max-width: 675px) {
+  .volunteers__bot {
+    flex-direction: row;
+    height: 355px;
+    flex-wrap: inherit;
+  }
+  .bot__img {
+    max-width: inherit;
+    width: 355px;
+    height: 100%;
+  }
+  .about__us-head {
+    gap: 20px;
+  }
+}
+@media (max-width: 595px) {
+  .content__img {
+    height: 280px;
+  }
+}
+@media (max-width: 466px) {
+  ._container:not(:last-child) {
+    padding: 0 10px;
+  }
+  .about__us-head {
+    margin-top: 40px;
+  }
+  .about__us-content {
+    gap: 10px;
+  }
+  .content__img {
+    padding: 0;
+    max-width: ;
+  }
+  .about__us-title {
+    font-size: 60px;
+  }
+  .about__us-paragraph {
+    font-size: 16px;
+  }
+  .about__us-blue {
+    padding: 40px 0;
+  }
+  .about__us-blue p {
+    font-size: 40px;
+  }
+  .volunteers__top h1 {
+    font-size: 40px;
+  }
+  .top__text {
+    font-size: 18px;
+  }
+  .our__founder-title {
+    font-size: 40px;
+  }
+  .content__subtitle {
+    font-size: 34px;
+  }
+  .volunteers__title {
+    font-size: 40px;
+  }
 }
