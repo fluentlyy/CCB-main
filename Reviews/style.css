@@ -97,7 +97,7 @@
 }
 @media (max-width: 675px) {
   .slider__profile {
-    max-width: 355px;
+    max-width: 100%;
     width: 100%;
   }
   .card__about svg {
