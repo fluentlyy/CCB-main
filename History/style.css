@@ -157,6 +157,14 @@ our-history__block {
   }
   .block-1__content {
     flex-direction: column;
+    max-width: 100%;
+  }
+  .block-1__imgs {
+    max-width: 100%;
+    width: 100%;
+  }
+  .block-1__img {
+    width: 50%;
   }
   .content__txt-bot {
     flex-direction: column;
@@ -229,9 +237,9 @@ our-history__block {
     max-width: 100%;
   }
   .block-1__img {
-    max-width: 325px;
-    width: 100%;
-    height: 325px;
+    width: auto;
+    height: 100%;
+    padding-top: 47.2%;
   }
   .content__txt-bot p {
     width: 100%;
@@ -251,6 +259,11 @@ our-history__block {
   }
   .block-1__imgs {
     flex-direction: column;
+  }
+  .block-1__img {
+    max-width: 100%;
+    width: 100%;
+    height: 355px;
   }
   .our-history__block-2 {
     margin-top: 60px;
@@ -299,8 +312,6 @@ our-history__block {
     margin-bottom: 60px;
   }
   .block-1__img {
-    max-width: 355px;
-    height: 355px;
   }
   .block-2__title {
     font-family: "Lubalin Graph";

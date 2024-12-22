@@ -192,9 +192,6 @@
   .our__founder-block {
     justify-content: flex-start;
   }
-  .all__team-cards {
-    justify-content: center;
-  }
 }
 @media (max-width: 1024px) {
   .main-team {
@@ -248,15 +245,19 @@
     width: auto;
     height: auto;
   }
+  .all__team-cards {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 709px) {
   .all__team-cards {
     gap: 10px;
-  }
-  .card {
-    max-width: 355px;
-    width: 100%;
-    border-radius: 20px;
   }
 }
 @media (max-width: 435px) {
