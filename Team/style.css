@@ -215,14 +215,12 @@
   .main-team {
     margin-top: 60px;
   }
-  .team__block-2 {
-    margin-top: 49px;
-  }
+
   .content__subtitle {
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 100%;
     letter-spacing: -0.05em;
     color: #2e2e2e;
@@ -231,33 +229,52 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 120%;
-    letter-spacing: -0.05em;
-    color: #2e2e2e;
-    margin: 20px 0 40px 0;
+    letter-spacing: -0.02em;
+    color: #000000;
   }
   .team__block-2 {
     gap: 30px;
+    margin-top: 80px;
   }
   .our__founder-block {
     align-items: flex-start;
   }
   .team__block-3 {
-    margin-top: 155px;
   }
   .block__volunteers {
     margin-top: 80px;
   }
 }
 @media (max-width: 730px) {
+  .team__title {
+    font-size: 90px;
+  }
+  .team__paragraph {
+    font-size: 21px;
+  }
   .our__founder-block {
     flex-direction: column;
   }
+  .img__back {
+    min-width: 355px;
+    border-radius: 20px;
+  }
   .our__founder-img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    min-height: 355px;
+  }
+  .our__founder-title {
+    font-size: 55px;
+  }
+  .content__subtitle {
+    font-size: 42px;
+  }
+  .content__paragraph {
+    font-size: 20px;
+  }
+  .all__team-title {
+    font-size: 55px;
   }
   .all__team-cards {
     width: 100%;
@@ -315,18 +332,30 @@
     gap: 20px;
     margin-top: 60px;
   }
+  .img__back {
+    width: 100%; /* Ширина контейнера */
+    max-width: 100%; /* Максимальна ширина */
+    height: 355px; /* Фіксована висота */
+    border-radius: 20px; /* Ваш бажаний border-radius */
+    overflow: hidden; /* Ховає краї зображення за межами контейнера */
+    position: relative;
+    min-width: 0;
+  }
+  .our__founder-img {
+    width: 100%;
+    height: 100%;
+  }
   .content__subtitle {
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 34px;
     line-height: 100%;
     letter-spacing: -0.05em;
     color: #2e2e2e;
   }
   .content__paragraph {
     margin: 10px 0 20px 0;
-
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -334,7 +363,6 @@
     line-height: 120%;
     letter-spacing: -0.05em;
     color: #2e2e2e;
-    opacity: 0.8;
   }
   .team__block-3 {
     margin-top: 60px;
