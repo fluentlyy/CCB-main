@@ -62,6 +62,7 @@
 }
 @media (max-width: 1024px) {
   .project__content {
+    gap: 30px;
   }
   .main__projects {
     margin-top: 60px;

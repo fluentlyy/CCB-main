@@ -1,16 +1,12 @@
-let img = document.querySelector(".script__img");
+/* let img = document.querySelector(".script__img");
 let founderTitle = document.querySelector(".our__founder-title");
 let contentTitle = document.querySelector(".content__subtitle");
 let contentParagraph = document.querySelector(".content__paragraph");
 function handleMediaChange() {
   if (window.innerWidth <= 730) {
-    img.src = "./img/founder.png";
-    founderTitle.textContent = "our Founder";
-    contentTitle.textContent = "Natalia Batkivna";
     contentParagraph.textContent =
       "(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.";
   } else if (window.innerWidth <= 1024) {
-    founderTitle.textContent = "our Founder";
     contentTitle.textContent = "Natalia Batkivna";
     contentParagraph.textContent =
       "(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.(CCB) is a non-profit organization that uses culture as a tool against violence. Through cultural and educational events, CCB unites Spain and countries affected by armed conflict.";
@@ -21,4 +17,4 @@ function handleMediaChange() {
 
 handleMediaChange();
 
-window.addEventListener("resize", handleMediaChange);
+window.addEventListener("resize", handleMediaChange); */

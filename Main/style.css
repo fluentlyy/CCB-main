@@ -1199,7 +1199,7 @@ body {
   }
 }
 @media (max-width: 1024px) {
-  .main-block:not(:first-child) {
+  .main-block:not(:first-child, :nth-child(3), :nth-child(8)) {
     margin-top: 80px;
   }
 
@@ -1263,7 +1263,7 @@ body {
     }
   }
   .page__main-block-3 {
-    margin-top: 118px;
+    margin-top: 120px;
   }
   .main__block-3 {
   }
@@ -1668,6 +1668,9 @@ body {
   .page__block-projects {
   }
   .block__projects {
+  }
+  .project__slider {
+    gap: 0;
   }
   .project__title {
     font-family: "Lubalin Graph";
