@@ -42,12 +42,20 @@
 .about__us-img {
   margin: 0 auto;
 }
+.content__img-back {
+  width: 100%; /* Ширина контейнера */
+  max-width: 670px; /* Максимальна ширина */
+  min-width: 560px;
+  height: 580px; /* Фіксована висота */
+  border-radius: 30px; /* Ваш бажаний border-radius */
+  overflow: hidden; /* Ховає краї зображення за межами контейнера */
+  position: relative;
+}
 .content__img {
-  max-width: 670px;
   width: 100%;
-  height: 580px;
-  background: #d9d9d9;
-  border-radius: 30px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .about__us-blue {
   background: #4b61f1;
@@ -81,13 +89,7 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.top__title {
-  max-width: 670px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.top__title h1 {
+._about-title {
   font-family: "Lubalin Graph";
   font-style: normal;
   font-weight: 5;
@@ -96,6 +98,12 @@
   letter-spacing: -0.05em;
   text-transform: uppercase;
   color: #2e2e2e;
+}
+.top__title {
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .title__imgs {
   display: flex;
@@ -136,6 +144,8 @@
   width: 100%;
   height: 325px;
   grid-column: span 2;
+  object-fit: cover;
+  object-position: center;
 }
 @media (max-width: 1366px) {
   .about__us-title {
@@ -158,7 +168,7 @@
     height: 308px;
   }
 }
-@media (max-width: 1190px) {
+@media (max-width: 1163px) {
   .about__us-content {
     display: flex;
     flex-direction: column;
@@ -179,10 +189,19 @@
     width: 278px;
     margin: 0;
   }
+  .content__img-back {
+    width: 100%; /* Ширина контейнера */
+    max-width: 100%; /* Максимальна ширина */
+    height: 580px; /* Фіксована висота */
+    border-radius: 30px; /* Ваш бажаний border-radius */
+    overflow: hidden; /* Ховає краї зображення за межами контейнера */
+    position: relative;
+  }
   .content__img {
-    max-width: 100%;
-    height: auto;
-    padding-top: 50.5%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 @media (max-width: 1270px) {
@@ -219,6 +238,20 @@
   .img__guitar {
     width: 186px;
   }
+  .content__img-back {
+    width: 100%;
+    height: 100%; /* Ширина контейнера */
+    max-width: 100%; /* Максимальна ширина */ /* Фіксована висота */
+    border-radius: 30px; /* Ваш бажаний border-radius */
+    overflow: hidden; /* Ховає краї зображення за межами контейнера */
+    position: relative;
+  }
+  .content__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 @media (max-width: 1004px) {
   .volunteers__bot {
@@ -244,16 +277,6 @@
     align-items: flex-start;
     gap: 10px;
   }
-  .volunteers__top h1 {
-    font-family: "Lubalin Graph";
-    font-style: normal;
-    font-weight: 5;
-    font-size: 70px;
-    line-height: 100%;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
-    color: #2e2e2e;
-  }
   .title__imgs {
     flex-direction: row-reverse;
   }
@@ -262,9 +285,6 @@
   }
 }
 @media (max-width: 802px) {
-  .about__us-title {
-    font-size: 80px;
-  }
 }
 @media (max-width: 729px) {
   .about__us-img {
@@ -286,14 +306,26 @@
     gap: 20px;
   }
 }
-@media (max-width: 595px) {
-  .content__img {
-    height: 280px;
+@media (max-width: 590px) {
+  ._about-title {
+    font-size: 60px;
+  }
+  .about__us-title {
+    font-size: 80px;
+  }
+  .content__img-back {
+    min-width: 0;
   }
 }
 @media (max-width: 466px) {
+  ._about-title {
+    font-size: 40px;
+  }
   ._container:not(:last-child) {
     padding: 0 10px;
+  }
+  .about__us-title {
+    font-size: 60px;
   }
   .about__us-head {
     margin-top: 40px;
@@ -301,34 +333,20 @@
   .about__us-content {
     gap: 10px;
   }
-  .content__img {
-    padding: 0;
-  }
-  .about__us-title {
-    font-size: 60px;
-  }
   .about__us-paragraph {
     font-size: 16px;
   }
   .about__us-blue {
     padding: 40px 0;
+    margin-top: 40px;
   }
   .about__us-blue p {
-    font-size: 40px;
-  }
-  .volunteers__top h1 {
     font-size: 40px;
   }
   .top__text {
     font-size: 18px;
   }
-  .our__founder-title {
-    font-size: 40px;
-  }
   .content__subtitle {
     font-size: 34px;
-  }
-  .volunteers__title {
-    font-size: 40px;
   }
 }
